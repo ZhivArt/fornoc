@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1.9fr 0.2fr;
+  gap: 1px 1px;
+  grid-template-areas: "header" "article" "footer";
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.3fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "logo nav logout";
+  grid-area: header;
+  background: #656565;}
+
+.logo{
+  grid-area: logo;
+  padding: 5px;}
+
+.nav{
+  grid-area: nav;}
+
+.logout{
+  grid-area: logout;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "menu main todo";
+  grid-area: article;
+}
+
+.menu{
+  grid-area: menu;}
+
+.m_title{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #008a96;}
+
+.m_list {
+  padding: 0;
+  list-style: none;}
+
+.m_list a:before {
+  content: "\2014";
+  margin-right: 14px;}
+
+.m_list a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  padding: 6px 0; 
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #444;
+  transition: .3s linear;}
+
+.m_list a:hover {color: #008a96;}
+
+.main{
+  grid-area: main;}
+
+.todo{
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "ico text";
+  grid-area: todo;}
+
+.ico{
+  grid-area: ico;}
+
+.text{
+  grid-area: text;}
+
+.footer{
+  grid-area: footer;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  background: green;
+}

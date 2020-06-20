@@ -1,0 +1,38 @@
+h2{
+    text-align: center;
+}
+.tg  
+{
+    width: 100%;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.tg td
+{
+    font-family:Arial, sans-serif;
+    font-size:14px;overflow:hidden;
+    padding:10px 5px;word-break:normal;
+    border-width: 1px;
+    border-color: #656565;
+    border-style: solid;
+}
+.tg th
+{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;}
+.tg .tg-sksp
+{
+    font-family:"Times New Roman", Times, serif !important;;
+    font-size:12px;
+    text-align:center;
+    vertical-align:top}
+.tg .tg-6u6v
+{
+    font-family:"Times New Roman", Times, serif !important;;
+    font-size:12px;
+    text-align:left;
+    vertical-align:top}
