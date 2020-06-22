@@ -5,46 +5,33 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 1.9fr 0.2fr;
-  gap: 1px 1px;
-  grid-template-areas: "header" "article" "footer";
+  height: 100vh;
+  grid-template-rows: 50px repeat(7, 1fr) 50px;
+  grid-template-columns: 200px repeat(5, 1fr) 500px;
 }
 
 .header{
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 0.3fr;
-  grid-template-rows: 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "logo nav logout";
-  grid-area: header;
-  background: #656565;}
+  grid-area: 1/1/2/8;
+  background: #008a96;}
 
 .logo{
-  grid-area: logo;
   padding: 5px;}
 
-.nav{
-  grid-area: nav;}
-
 .logout{
-  grid-area: logout;
+  padding: 5px;
   width: 80px;
   height: 40px;
-  border-radius: 5px;
-}
+  border-radius: 5px;}
 
 .article {
+  grid-area: 2/2/9/7;
   display: grid;
-  grid-template-columns: 0.2fr 1fr 0.5fr;
-  grid-template-rows: 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "menu main todo";
-  grid-area: article;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .menu{
-  grid-area: menu;}
+  grid-area: 2/1/9/2;}
 
 .m_title{
   text-transform: uppercase;
@@ -76,27 +63,15 @@
 
 .m_list a:hover {color: #008a96;}
 
-.main{
-  grid-area: main;}
-
 .todo{
-  display: grid;
-  grid-template-columns: 0.1fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "ico text";
-  grid-area: todo;}
-
-.ico{
-  grid-area: ico;}
-
-.text{
-  grid-area: text;}
+  grid-area: 2/7/9/8;
+  padding: 5px;
+  border-left: 3px solid #008a96;}
 
 .footer{
-  grid-area: footer;
-  position: absolute;
-  height: 50px;
-  width: 100%;
-  bottom: 0;
-  background: green;
-}
+  grid-area: 9/1/10/8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+  text-align: center;
+  background: #008a96;}
